@@ -122,6 +122,7 @@ playThirdSong.addEventListener('click' , () =>{
 });
 
 
+
 /***
  * 
  * Videos
@@ -150,13 +151,13 @@ thirdVideoViewPort.classList.add('hideSong');
 
 toggleVideo.addEventListener('click' , () =>{
   displayVideoViewPort.classList.toggle('hideSong');
-  // displaySongViewPort.classList.add('hideSong');
-  // displaySongViewPort.classList.add('firstDisplayVideo');
+  displaySongViewPort.classList.add('hideSong');
+  displaySongViewPort.classList.add('firstDisplayVideo');
 
 
-  // firstSongViewPort.classList.add('hideSong');
-  // secondSongViewPort.classList.add('hideSong');
-  // thirdSongViewPort.classList.add('hideSong');
+  firstSongViewPort.classList.add('hideSong');
+  secondSongViewPort.classList.add('hideSong');
+  thirdSongViewPort.classList.add('hideSong');
 });
 
 playFirstVideo.addEventListener('click' , () =>{

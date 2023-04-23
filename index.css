@@ -6,8 +6,12 @@ body{
     justify-content: center;
     align-items: center; */
     width: 100%;
-    height: 120vh;
-    background: #000;
+    height: 100vh;
+    /* background: url(./pexels-sy-donny-1841841.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+   
 }
 .text-color{
     color: #000;
@@ -190,6 +194,12 @@ body{
     background-color: #000;
   }
   /*======SOngs======*/
+  .songDisplay{
+   width: 700px;
+   height: 300px;
+   margin-top: -400px;
+  }
+ 
   .fav{
    display:flex;
     justify-content: center;
@@ -216,6 +226,11 @@ body{
     align-items: center;
   }
   /*=======Video========*/
+  .videoDisplay{
+   margin: 5rem;
+   width: 700px;
+   height: 300px;
+  }
   .firstDisplayVideo{
    margin-left: 12rem;
   }
