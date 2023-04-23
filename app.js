@@ -133,18 +133,96 @@ const playVid = document.getElementById('letsPlay');
 const pauseVid = document.getElementById('letsPlay');
 const rewindVid = document.getElementById('letsPlay');
 const fastVid = document.getElementById('letsPlay')
+const playFirstVideo = document.getElementById('firstVideo');
+const playSecondVideo = document.getElementById('secondVideo');
+const playThirdVideo = document.getElementById('thirdVideo');
+const firstVideoViewPort = document.getElementById('playFirstVideo');
+const secondVideoViewPort = document.getElementById('playSecondVideo');
+const thirdVideoViewPort = document.getElementById('playThirdVideo');
 
 
 // hide the displays
 displayVideoViewPort.classList.add('hideSong');
+firstVideoViewPort.classList.add('hideSong');
+secondVideoViewPort.classList.add('hideSong');
+thirdVideoViewPort.classList.add('hideSong');
 
 
 toggleVideo.addEventListener('click' , () =>{
   displayVideoViewPort.classList.toggle('hideSong');
-  displaySongViewPort.classList.add('hideSong');
-  displaySongViewPort.classList.add('firstDisplayVideo');
+  // displaySongViewPort.classList.add('hideSong');
+  // displaySongViewPort.classList.add('firstDisplayVideo');
+
+
+  // firstSongViewPort.classList.add('hideSong');
+  // secondSongViewPort.classList.add('hideSong');
+  // thirdSongViewPort.classList.add('hideSong');
 });
 
+playFirstVideo.addEventListener('click' , () =>{
+  
+  firstVideoViewPort.classList.toggle('hideSong');
+  secondVideoViewPort.classList.add('hideSong');
+  thirdVideoViewPort.classList.add('hideSong');
+  displayVideoViewPort.classList.add('hideSong');
+
+  document.getElementById('musicDisplay').innerText = "Bazzi- I Fucking Love You";
+
+
+  nowPlaying.addEventListener('click' , () =>{
+ 
+    
+  
+    document.getElementById('musicDisplay').innerText = "Bazzi -IFLY";
+  
+    
+   
+  });
+
+});
+
+playSecondVideo.addEventListener('click' , () =>{
+  secondVideoViewPort.classList.add('secondVidAdjustment');
+  secondVideoViewPort.classList.toggle('hideSong');
+  firstVideoViewPort.classList.add('hideSong');
+  thirdVideoViewPort.classList.add('hideSong');
+  displayVideoViewPort.classList.add('hideSong');
+
+  document.getElementById('musicDisplay').innerText = "Bazzi-Mine";
+
+  nowPlaying.addEventListener('click' , () =>{
+ 
+    
+  
+    document.getElementById('musicDisplay').innerText = "Bazzi-Mine--";
+  
+    
+   
+  });
+
+});
+
+playThirdVideo.addEventListener('click' , () =>{
+
+  thirdVideoViewPort.classList.add('center');
+  thirdVideoViewPort.classList.toggle('hideSong');
+  firstVideoViewPort.classList.add('hideSong');
+  secondVideoViewPort.classList.add('hideSong');
+  displayVideoViewPort.classList.add('hideSong');
+
+  document.getElementById('musicDisplay').innerText = "Bazzi-Beautiful";
+
+  nowPlaying.addEventListener('click' , () =>{
+ 
+    
+  
+    document.getElementById('musicDisplay').innerText = "Bazzi-Beautiful--";
+  
+    
+   
+  });
+
+});
 
 
 
