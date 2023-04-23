@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoPlayer</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="Music_col">
+        <div class="grooveMusic ">
+            <div>
+                <h4>Maliki Music</h4>
+                <h4 class="hambuger"><i class="bi bi-list"></i></h4>
+                <div class="searchBar">
+                    <div class="searchIcon">
+                        <input type="text" value="Search">
+                        <!-- <p class="search">icon</p> -->
+                    </div>
+                </div>
+                <div class="icons flex">
+                    <i class="bi bi-music-note-beamed" id="favourite">My Favourite</i> 
+                    <i class="bi bi-clock" id="recent">Recent Plays</i>
+                    <i class="bi bi-bar-chart-line" id="nowPlayin">Now Playing</i>
+                </div>
+                <div class="border"></div>
+                <div class="playlist">
+                    <div class="play">
+                        <i class="bi bi-layout-sidebar-reverse">PlayList</i>
+                    </div>
+                    <div class="playlistIcon"><i class="bi bi-plus-lg"></i></div>
+                </div>
+                <div class="borderTwo"></div>
+                <div class="SignIn">
+                    <div class="Sign flex">
+                        <i class="bi bi-person-circle">Can't Sign in</i>
+                    </div>
+                    <div class="signInIcon"><i class="bi bi-gear"></i></div>
+                </div>
+                <div class="stream ">
+                    <i class="bi bi-lightning">Stream Millions Of Songs Here Free!!!</i>
+                   
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="myMusic text-color">
+            <div class="myMusicIcon">
+                <i class="bi bi-dash"></i>
+                <i class="bi bi-arrows-fullscreen"></i>
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="myMusicText">
+                <h1 id="displayClosed">My Music</h1>
+                <div class="playOut">
+                    <ul class="playOutList">
+                        <li class="different"  id="toggle">SONGS</li>
+                        <li class="different" id="toggleVideo"> MUSIC VIDEO</li>
+                        <li class="different">GMV</li>
+                    </ul>
+                    <div class="borderThree"></div>
+
+                    <!---------Video------>
+                    <div class="videoDisplay">
+                        <div class="firstDisplayVideo" id="displayTheVideo">
+                            <p>
+                                <a class="song_tittle" id="firstVideo" > Davido</a>
+                            </p>
+                               
+                        
+                              <p> <a class="song_tittle" id="secondVideo" > Davido</a></p>
+                               
+                             
+                              <p> <a class="song_tittle" id="thirdVideo">JAE5</a></p>
+                               
+                       </div>
+                    </div>
+                           
+                    <!-----SOngs-------->
+                    <div class="songDisplay">
+                       <div class="firstDisplaySong" id="displayTheSong">
+                            <p>
+                                <a class="song_tittle" id="firstSong" > Davido-E pain Me</a>
+                            </p>
+                               
+                        
+                              <p> <a class="song_tittle" id="secondSong" > Davido- Feel</a></p>
+                               
+                             
+                              <p> <a class="song_tittle" id="thirdSong">JAE5-Ft-Dave-and-BNXN-Propeller-</a></p>
+                               
+                       </div>
+                       <div class="fav" id="fav">
+                        <div class="grid">
+                            <p>
+                                <a class="song_tittle" id="firstSong" > Davido-E pain Me</a>
+                            </p>
+                            <audio width="600" height="240" class="" controls>  
+                                <source src="./Davido-E-Pain-Me-(TrendyBeatz.com).mp3" type="audio/mpeg">
+                        </div>    
+
+                      </div>
+                          <div class="forEachSongPlayer" id="playFirstSong" class="add">
+                            <p>
+                                <a class="song_tittle"> Davido-E pain Me</a>
+                            </p>
+                            <audio width="600" height="240" class="" controls>  
+                                <source src="./Davido-E-Pain-Me-(TrendyBeatz.com).mp3" type="audio/mpeg">
+                          </div>
+
+                          <div class="forEachSongPlayer" id="playSecondSong" class="add">
+                            <p>
+                                <a class="song_tittle"> Davido- Feel</a>
+                            </p>
+                            <audio width="600" height="240" class="" controls>  
+                                <source src="./Davido-Feel-(TrendyBeatz.com).mp3" type="audio/mpeg">
+                          </div>
+
+                          <div class="forEachSongPlayer" id="playThirdSong" class="add">
+                            <p>
+                                <a class="song_tittle">JAE5-Ft-Dave-and-BNXN-Propeller-</a>
+                            </p>
+                            <audio width="600" height="240" class="" controls>  
+                                <source src="./JAE5-Ft-Dave-and-BNXN-Propeller-(TrendyBeatz.com).mp3" type="audio/mpeg">
+                          </div>
+                    </div>
+                     
+
+                                    
+                </div>                        
+            </div>
+        </div>
+    </div>
+    <div class="footerMusic">
+        <div class="musicDisplay" id="musicDisplay"></div>
+        <div class="musicControls"></div>
+        <div class="volume"></div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
