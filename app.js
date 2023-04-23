@@ -205,7 +205,7 @@ playSecondVideo.addEventListener('click' , () =>{
 
 playThirdVideo.addEventListener('click' , () =>{
 
-  thirdVideoViewPort.classList.add('center');
+  thirdVideoViewPort.classList.add('thirdVidAdjustment');
   thirdVideoViewPort.classList.toggle('hideSong');
   firstVideoViewPort.classList.add('hideSong');
   secondVideoViewPort.classList.add('hideSong');
