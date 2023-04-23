@@ -191,7 +191,21 @@ body{
   .musicDisplay , .musicControls , .volume{
     color: #fff;
     background-color: #000;
+    width: 100%;
   }
+  .functions{
+   margin-top: 50px;
+}
+.func{
+   justify-content: center;
+}
+.di{
+   font-size: 40px;
+   margin: 3rem;
+   color: rgb(231, 201, 201);
+   cursor: pointer;
+    padding: 30px 35px;
+}
   /*======SOngs======*/
   .songDisplay{
    width: 700px;
